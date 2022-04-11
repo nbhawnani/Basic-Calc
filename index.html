@@ -1,0 +1,54 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->  
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<link rel="stylesheet" href="style.css">
+  
+
+  
+</head>  
+<body>  
+<h1> Calculator Program in JavaScript </h1>  
+<div class= "formstyle">  
+<form name = "form1">  
+      
+    <!-- This input box shows the button pressed by the user in calculator. -->  
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  <!-- Display the calculator button on the screen. -->  
+  <!-- onclick() function display the number prsses by the user. -->  
+  <input type = "button" value = "1" onclick = "genExpression('1') ">  
+  <input type = "button" value = "2" onclick = "genExpression('2') ">  
+  <input type = "button" value = "3" onclick = "genExpression('3') ">  
+   <input type = "button" value = "+" onclick = "genExpression('+') ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "genExpression('4') ">  
+  <input type = "button" value = "5" onclick = "genExpression('5')">  
+  <input type = "button" value = "6" onclick = "genExpression('6') ">  
+  <input type = "button" value = "-" onclick = "genExpression('-')">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "genExpression('7') ">  
+  <input type = "button" value = "8" onclick = "genExpression('8')">  
+  <input type = "button" value = "9" onclick = "genExpression('9') ">  
+  <input type = "button" value = "*" onclick = "genExpression('*')">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "genExpression('/') ">  
+  <input type = "button" value = "0" onclick = "genExpression('0') ">  
+    <input type = "button" value = "." onclick = "genExpression('.') ">  
+    <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->  
+  <input type = "button" value = "=" onclick = "evalResult()">  
+  <br>   
+  <!-- Display the Cancel button and erase all data entered by the user. -->  
+  <input type = "button" value = "Clear All" onclick = "clearAll()" id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  
+  <script src="script.js"></script>
+</body>  
+</html>  
